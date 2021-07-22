@@ -1,0 +1,219 @@
+/* .WorkGrid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+} */
+body {
+    background-color: rgb(245, 240, 241);
+    margin: 0 40px 0 40px;
+}
+.navigation{grid-area:main-menu;}
+.header{ grid-area: header; }
+.WorkImage1 { grid-area: image1; }
+.Box1 { grid-area: info1; }
+.WorkImage2 { grid-area: image2; }
+.Box2{ grid-area: info2; }
+.WorkImage3{ grid-area: image3; }
+.Box3 { grid-area: info3; }
+.footer{ grid-area: footer; }
+
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+    display: inline-block;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #373738;
+}
+
+
+
+nav{
+    width: 73%;
+    padding: 1%;
+    display: inline-block;
+}
+
+nav ul{
+    width: 50%;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+} 
+
+nav li{
+    list-style-type: none;
+    margin: 0 0 0 10px;
+    color: white;
+
+}
+
+.header {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: xx-large;
+}
+
+.WorkGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    
+    'image1 image1 image1 info1 info1'
+    'info2 info2 image2 image2 image2'
+    'image3 image3 image3 info3 info3'
+    'footer footer footer footer footer';
+  grid-gap: 10px;
+  grid-row-gap:20px ;
+  padding: 10px;
+}
+.WorkImage1 {
+    background-color: #B8CADF;
+    text-align: center;
+    padding: 40px; 
+}
+
+.Picture1 {
+    height: 300px;
+    width: 500px;
+}
+
+.WorkImage2 {
+    background-color: #ADD5DB;
+    padding: 40px;
+    text-align: center;
+}
+
+.Picture2 {
+    height: 300px;
+    width: 500px;
+    
+}
+.WorkImage3 {
+    background-color: #a1cee9;
+    padding: 40px;
+    text-align: center;
+}
+
+
+.Picture3 {
+    height: 300px;
+    width: 500px;
+}
+/* .Picture1 {
+        display: block;
+       margin-left: auto;
+       margin-right: auto;
+        padding: 20px 10px 0 0;
+      } */
+
+
+.Box {
+   color: black;
+    text-align: center;
+    padding-top: 80px;
+   
+}
+/* .Box1 {
+ color: black;
+    text-align: center;
+    padding-top: 80px;
+
+}
+.Box3 {
+    color: black;
+    text-align: center;
+    padding-top:80px;
+   
+} */
+
+.Title {
+    font-size: large;
+}
+
+.footer {
+    text-align: center;
+    background-color: #373738;
+    color: whitesmoke;
+    padding: 10px 20px 20px 20px;
+    margin: 0 40px 40px 40px;
+
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #B8CADF;
+  }
+  
+  .button1:hover {
+    background-color: #B8CADF;
+  }
+  
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ADD5DB;
+  }
+  
+  .button2:hover {
+    background-color: #ADD5DB;
+    /* color: white; */
+  }
+
+  .button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #a1cee9;
+  }
+  
+  .button3:hover {
+    background-color: #a1cee9;
+  }
+
+  @media (max-width: 800px) {
+      .Title{ color: midnightblue;
+      }
+      .WorkGrid { 
+        grid-template-areas:
+    
+    'image1'
+    'info1'
+    'image2'
+    'info2'
+    'image3'
+    'info3'
+    'footer';
+    grid-row-gap: 10px;
+          }
+          .Box {
+              padding-top: 1px;
+              padding-bottom: 20px;
+          }
+        
+  }
+
+
